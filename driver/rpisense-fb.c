@@ -139,7 +139,7 @@ static void rpisense_fb_deferred_io(struct fb_info *info,
 }
 
 static struct fb_deferred_io rpisense_fb_defio = {
-	.delay		= HZ/10,
+	.delay		= HZ/100,
 	.deferred_io	= rpisense_fb_deferred_io,
 };
 
@@ -293,4 +293,3 @@ module_platform_driver(rpisense_fb_driver);
 MODULE_DESCRIPTION("Raspberry Pi Sense HAT framebuffer driver");
 MODULE_AUTHOR("Serge Schneider <serge@raspberrypi.org>");
 MODULE_LICENSE("GPL");
-

@@ -128,3 +128,16 @@ while True:
     sleep(1)
 
 ```
+
+## Displaying 8x8 RPi Logo on the LED Matrix
+
+```py
+from sense_hat import SenseHat
+
+# 7 is I2C bus
+sense = SenseHat(7)
+
+while True:
+    sense.load_image('rpi.png', redraw=True)
+
+```
