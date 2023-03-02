@@ -65,7 +65,7 @@ KR260-SenseHAT
 └── main.py                  // Example python file, switch sensor reading with joystick
 ```
 
-## Aailable Properties
+## Available Properties
 
 -   humidity
 -   temp
